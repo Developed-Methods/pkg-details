@@ -1,6 +1,6 @@
 [package]
 name = "pkg-details"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2024"
 description = "A way to register package details for dependencies."
 repository = "https://github.com/Developed-Methods/pkg-details"

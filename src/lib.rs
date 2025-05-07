@@ -11,13 +11,12 @@ pub struct PkgDetails {
 #[macro_export]
 macro_rules! init {
     () => {{
-        let env = $crate::PkgDetails {
+        let d = $crate::PkgDetails {
             pkg_name: env!("CARGO_PKG_NAME"),
             pkg_version: env!("CARGO_PKG_VERSION"),
         };
-        let mut lock = $crate::__PKG_DETAILS.write();
-        lock.replace(env);
-        logging
+        let mut lock = $crate::__PKG_DETAILS.write().unwrap();
+        lock.replace(d);
     }};
 }
 
