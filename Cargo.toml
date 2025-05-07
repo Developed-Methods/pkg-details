@@ -1,0 +1,9 @@
+[package]
+name = "pkg-details"
+version = "0.1.0"
+edition = "2024"
+description = "Wrapper around hyper to help with making a http server"
+repository = "https://github.com/Developed-Methods/pkg-details"
+license = "MIT"
+
+[dependencies]
